@@ -1,7 +1,7 @@
 import json
 import requests
 from requests.adapters import HTTPAdapter, Retry
-import glob, os, time
+import glob, os, time, shutil
 
 
 def download_image(id, url):
@@ -26,17 +26,20 @@ def download_image(id, url):
             print(f"Error {e} on {id}, {url}")
 
 
-def get_downloaded_image_id(dirPath):
+def get_downloaded_image_id(dirPath, ext=False):
     downloaded = set()
     for file in os.listdir(dirPath):
         if file.endswith(".jpg") or file.endswith(".png") or file.endswith(".gif"):
-            downloaded.add(file.split(".")[0])
+            if ext:
+                downloaded.add(file.split("."))
+            else:
+                downloaded.add(file.split(".")[0])
     return downloaded
 
 
 def download_dataset():
     downloaded = get_downloaded_image_id('./img')
-    dtypes = ['val', 'train']
+    dtypes = ['test', 'val', 'train']
     start = time.time()
     for dtype in dtypes:
         start_local = time.time()
@@ -121,10 +124,48 @@ def filter_broken_images():
         with open(f"./sis/filtered.{dtype}.story-in-sequence.json", 'w') as handle:
             json.dump(data, handle, ensure_ascii=False)
 
+def sort_images():
+    images = get_downloaded_image_id("./img")
+    dtypes = ['val', 'test', 'train']
+    for dtype in dtypes:
+        print(dtype)
+        start = time.time()
+        with open(f"./sis/filtered.{dtype}.story-in-sequence.json", 'r') as handle:
+            data = json.load(handle)
+        counts = {}
+        image_file = {}
+        new_images = []
+        broken_images = 0
+        total_images = len(data['images'])
+        for image in data['images']:
+            url = 'url_o' if 'url_o' in image else 'url_m'
+            ii = image[url].split(".")
+            image_file[image['id']] = f"{image['id']}.{ii[-1]}"
+
+        stories = {}
+        annotations = data['annotations']
+        unique_images = set()
+        unique_stories = set()
+        for annotation in annotations:
+            # story_id = annotation['story_id']
+            # stories[story_id] = stories.get(story_id, []) + [annotation]
+            shutil.copy2(f"./img/{image_file[annotation['photo_flickr_id']]}", 
+                    f"./img/{dtype}/{image_file[annotation['photo_flickr_id']]}")
+            unique_images.add(annotation['photo_flickr_id'])
+            unique_stories.add(annotation['story_id'])
+        print(len(list(unique_images)), len(list(unique_stories)))
+        
+        # for story_id, story_sequence in stories.items():
+        #     storylet_complete = True
+        #     for storylet in story_sequence:
+        #         shutil.copy2(f"./img/{image_file[storylet['photo_flickr_id']]}", 
+        #             f"./img/{dtype}/{image_file[storylet['photo_flickr_id']]}")
+
 
 def main():
     #filter_broken_images()
-    download_dataset()
+    #download_dataset()
+    sort_images()
 
 if __name__ == '__main__':
     main()
