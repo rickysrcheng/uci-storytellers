@@ -1,0 +1,54 @@
+backcall @ file:///home/conda/feedstock_root/build_artifacts/backcall_1592338393461/work
+backports.functools-lru-cache @ file:///home/conda/feedstock_root/build_artifacts/backports.functools_lru_cache_1618230623929/work
+boto3==1.23.10
+botocore==1.26.10
+certifi==2021.5.30
+charset-normalizer==2.0.12
+click==8.0.4
+colorama @ file:///home/conda/feedstock_root/build_artifacts/colorama_1655412516417/work
+dataclasses==0.8
+decorator @ file:///home/conda/feedstock_root/build_artifacts/decorator_1641555617451/work
+entrypoints @ file:///home/conda/feedstock_root/build_artifacts/entrypoints_1643888246732/work
+filelock==3.4.1
+idna==3.4
+-e git+https://github.com/chrisdonahue/ilm.git@68637cb77c9189d28a21afef413cf193f71411f9#egg=ilm
+importlib-metadata==4.8.3
+ipykernel @ file:///D:/bld/ipykernel_1620913140366/work/dist/ipykernel-5.5.5-py3-none-any.whl
+ipython @ file:///D:/bld/ipython_1609697945785/work
+ipython-genutils==0.2.0
+jedi @ file:///D:/bld/jedi_1605054785407/work
+jmespath==0.10.0
+joblib==1.1.1
+jupyter-client @ file:///home/conda/feedstock_root/build_artifacts/jupyter_client_1642858610849/work
+jupyter-core @ file:///D:/bld/jupyter_core_1631852848502/work
+nest-asyncio @ file:///home/conda/feedstock_root/build_artifacts/nest-asyncio_1664684991461/work
+nltk==3.4.5
+numpy==1.18.2
+pandas==1.1.5
+parso @ file:///home/conda/feedstock_root/build_artifacts/parso_1595548966091/work
+pickleshare @ file:///home/conda/feedstock_root/build_artifacts/pickleshare_1602536217715/work
+Pillow==8.4.0
+prompt-toolkit @ file:///home/conda/feedstock_root/build_artifacts/prompt-toolkit_1670414775770/work
+Pygments @ file:///home/conda/feedstock_root/build_artifacts/pygments_1672682006896/work
+python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_1626286286081/work
+pytz==2023.3
+pywin32==301
+pyzmq @ file:///D:/bld/pyzmq_1631793604214/work
+regex==2023.5.5
+requests==2.27.1
+s3transfer==0.5.2
+sacremoses==0.0.53
+sentencepiece==0.1.99
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+tokenizers==0.5.2
+torch==1.4.0
+torchvision==0.5.0
+tornado @ file:///D:/bld/tornado_1610094881553/work
+tqdm==4.46.0
+traitlets @ file:///home/conda/feedstock_root/build_artifacts/traitlets_1631041982274/work
+transformers==2.7.0
+typing_extensions==4.1.1
+urllib3==1.25.9
+wcwidth @ file:///home/conda/feedstock_root/build_artifacts/wcwidth_1673864653149/work
+wincertstore==0.2
+zipp==3.6.0

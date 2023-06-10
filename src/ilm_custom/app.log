@@ -1,0 +1,3272 @@
+2023-05-29 17:35:33,406 [INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-config.json from cache at C:\Users\wjdgone\.cache\torch\transformers\4be02c5697d91738003fb1685c9872f284166aa32e061576bbe6aaeb95649fcf.db13c9bc9c7bdd738ec89e069621d88e05dc670366092d809a9cbcac6798e24e
+2023-05-29 17:35:33,407 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50257
+}
+
+2023-05-29 17:35:33,809 [INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-pytorch_model.bin from cache at C:\Users\wjdgone\.cache\torch\transformers\4295d67f022061768f4adc386234dbdb781c814c39662dd1662221c309962c55.778cf36f5c4e5d94c8cd9cefcf2a580c8643570eb327f0d4a1f007fab2acbdf1
+2023-05-29 17:35:36,016 [INFO] Weights of GPT2LMHeadModel not initialized from pretrained model: ['lm_head.weight']
+2023-05-29 17:45:28,276 [INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-config.json from cache at C:\Users\wjdgone\.cache\torch\transformers\4be02c5697d91738003fb1685c9872f284166aa32e061576bbe6aaeb95649fcf.db13c9bc9c7bdd738ec89e069621d88e05dc670366092d809a9cbcac6798e24e
+2023-05-29 17:45:28,277 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50257
+}
+
+2023-05-29 17:45:28,603 [INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-pytorch_model.bin from cache at C:\Users\wjdgone\.cache\torch\transformers\4295d67f022061768f4adc386234dbdb781c814c39662dd1662221c309962c55.778cf36f5c4e5d94c8cd9cefcf2a580c8643570eb327f0d4a1f007fab2acbdf1
+2023-05-29 17:45:30,995 [INFO] Weights of GPT2LMHeadModel not initialized from pretrained model: ['lm_head.weight']
+2023-05-29 17:59:18,117 [INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-config.json from cache at C:\Users\wjdgone\.cache\torch\transformers\4be02c5697d91738003fb1685c9872f284166aa32e061576bbe6aaeb95649fcf.db13c9bc9c7bdd738ec89e069621d88e05dc670366092d809a9cbcac6798e24e
+2023-05-29 17:59:18,118 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50257
+}
+
+2023-05-29 17:59:18,432 [INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-pytorch_model.bin from cache at C:\Users\wjdgone\.cache\torch\transformers\4295d67f022061768f4adc386234dbdb781c814c39662dd1662221c309962c55.778cf36f5c4e5d94c8cd9cefcf2a580c8643570eb327f0d4a1f007fab2acbdf1
+2023-05-29 17:59:20,760 [INFO] Weights of GPT2LMHeadModel not initialized from pretrained model: ['lm_head.weight']
+2023-05-29 17:59:23,541 [INFO] entered batch
+2023-05-29 17:59:23,541 [INFO] starting batch
+2023-05-29 17:59:23,541 [INFO] in eval loop
+2023-05-29 18:01:08,853 [INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-config.json from cache at C:\Users\wjdgone\.cache\torch\transformers\4be02c5697d91738003fb1685c9872f284166aa32e061576bbe6aaeb95649fcf.db13c9bc9c7bdd738ec89e069621d88e05dc670366092d809a9cbcac6798e24e
+2023-05-29 18:01:08,854 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50257
+}
+
+2023-05-29 18:01:09,169 [INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-pytorch_model.bin from cache at C:\Users\wjdgone\.cache\torch\transformers\4295d67f022061768f4adc386234dbdb781c814c39662dd1662221c309962c55.778cf36f5c4e5d94c8cd9cefcf2a580c8643570eb327f0d4a1f007fab2acbdf1
+2023-05-29 18:01:11,531 [INFO] Weights of GPT2LMHeadModel not initialized from pretrained model: ['lm_head.weight']
+2023-05-29 18:07:34,053 [INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-config.json from cache at C:\Users\wjdgone\.cache\torch\transformers\4be02c5697d91738003fb1685c9872f284166aa32e061576bbe6aaeb95649fcf.db13c9bc9c7bdd738ec89e069621d88e05dc670366092d809a9cbcac6798e24e
+2023-05-29 18:07:34,053 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50257
+}
+
+2023-05-29 18:07:34,375 [INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-pytorch_model.bin from cache at C:\Users\wjdgone\.cache\torch\transformers\4295d67f022061768f4adc386234dbdb781c814c39662dd1662221c309962c55.778cf36f5c4e5d94c8cd9cefcf2a580c8643570eb327f0d4a1f007fab2acbdf1
+2023-05-29 18:07:36,910 [INFO] Weights of GPT2LMHeadModel not initialized from pretrained model: ['lm_head.weight']
+2023-05-29 18:14:20,557 [INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-config.json from cache at C:\Users\wjdgone\.cache\torch\transformers\4be02c5697d91738003fb1685c9872f284166aa32e061576bbe6aaeb95649fcf.db13c9bc9c7bdd738ec89e069621d88e05dc670366092d809a9cbcac6798e24e
+2023-05-29 18:14:20,558 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50257
+}
+
+2023-05-29 18:14:20,900 [INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-pytorch_model.bin from cache at C:\Users\wjdgone\.cache\torch\transformers\4295d67f022061768f4adc386234dbdb781c814c39662dd1662221c309962c55.778cf36f5c4e5d94c8cd9cefcf2a580c8643570eb327f0d4a1f007fab2acbdf1
+2023-05-29 18:14:23,357 [INFO] Weights of GPT2LMHeadModel not initialized from pretrained model: ['lm_head.weight']
+2023-05-29 18:17:25,864 [INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-config.json from cache at C:\Users\wjdgone\.cache\torch\transformers\4be02c5697d91738003fb1685c9872f284166aa32e061576bbe6aaeb95649fcf.db13c9bc9c7bdd738ec89e069621d88e05dc670366092d809a9cbcac6798e24e
+2023-05-29 18:17:25,864 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50257
+}
+
+2023-05-29 18:17:26,174 [INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-pytorch_model.bin from cache at C:\Users\wjdgone\.cache\torch\transformers\4295d67f022061768f4adc386234dbdb781c814c39662dd1662221c309962c55.778cf36f5c4e5d94c8cd9cefcf2a580c8643570eb327f0d4a1f007fab2acbdf1
+2023-05-29 18:17:28,569 [INFO] Weights of GPT2LMHeadModel not initialized from pretrained model: ['lm_head.weight']
+2023-05-29 18:21:55,609 [INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-config.json from cache at C:\Users\wjdgone\.cache\torch\transformers\4be02c5697d91738003fb1685c9872f284166aa32e061576bbe6aaeb95649fcf.db13c9bc9c7bdd738ec89e069621d88e05dc670366092d809a9cbcac6798e24e
+2023-05-29 18:21:55,609 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50257
+}
+
+2023-05-29 18:21:55,915 [INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-pytorch_model.bin from cache at C:\Users\wjdgone\.cache\torch\transformers\4295d67f022061768f4adc386234dbdb781c814c39662dd1662221c309962c55.778cf36f5c4e5d94c8cd9cefcf2a580c8643570eb327f0d4a1f007fab2acbdf1
+2023-05-29 18:21:58,335 [INFO] Weights of GPT2LMHeadModel not initialized from pretrained model: ['lm_head.weight']
+2023-05-29 18:22:05,190 [INFO] check
+2023-05-29 18:25:00,545 [INFO] loading configuration file ./data/samples\config.json
+2023-05-29 18:25:00,546 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50264
+}
+
+2023-05-29 18:25:00,548 [INFO] loading weights file ./data/samples\pytorch_model.bin
+2023-05-29 18:25:09,103 [INFO] check
+2023-05-29 18:31:08,774 [INFO] check
+2023-05-29 18:37:08,957 [INFO] check
+2023-05-29 18:43:08,964 [INFO] check
+2023-05-29 18:49:08,716 [INFO] check
+2023-05-29 18:55:08,881 [INFO] check
+2023-05-29 18:59:22,522 [INFO] loading configuration file ./data/samples\config.json
+2023-05-29 18:59:22,523 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50264
+}
+
+2023-05-29 18:59:22,524 [INFO] loading weights file ./data/samples\pytorch_model.bin
+2023-05-29 18:59:31,065 [INFO] check
+2023-05-29 18:59:40,593 [INFO] loading configuration file ./data/samples\config.json
+2023-05-29 18:59:40,594 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50264
+}
+
+2023-05-29 18:59:40,595 [INFO] loading weights file ./data/samples\pytorch_model.bin
+2023-05-29 18:59:49,095 [INFO] check
+2023-05-29 19:00:43,861 [INFO] loading configuration file ./data/samples\config.json
+2023-05-29 19:00:43,861 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50264
+}
+
+2023-05-29 19:00:43,863 [INFO] loading weights file ./data/samples\pytorch_model.bin
+2023-05-29 19:02:16,946 [INFO] loading configuration file ./data/samples\config.json
+2023-05-29 19:02:16,947 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50264
+}
+
+2023-05-29 19:02:16,948 [INFO] loading weights file ./data/samples\pytorch_model.bin
+2023-05-29 19:02:25,343 [INFO] check
+2023-05-29 19:29:54,374 [INFO] loading configuration file ./data/samples\config.json
+2023-05-29 19:29:54,375 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50264
+}
+
+2023-05-29 19:29:54,376 [INFO] loading weights file ./data/samples\pytorch_model.bin
+2023-05-29 19:30:12,757 [INFO] loading configuration file ./data/samples\config.json
+2023-05-29 19:30:12,757 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50264
+}
+
+2023-05-29 19:30:12,758 [INFO] loading weights file ./data/samples\pytorch_model.bin
+2023-05-29 19:30:21,214 [INFO] check
+2023-05-29 19:31:19,839 [INFO] loading configuration file ./data/samples\config.json
+2023-05-29 19:31:19,839 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50264
+}
+
+2023-05-29 19:31:19,841 [INFO] loading weights file ./data/samples\pytorch_model.bin
+2023-05-29 19:33:00,643 [INFO] loading configuration file ./data/samples\config.json
+2023-05-29 19:33:00,643 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50264
+}
+
+2023-05-29 19:33:00,645 [INFO] loading weights file ./data/samples\pytorch_model.bin
+2023-05-29 19:33:09,068 [INFO] check
+2023-05-30 09:49:52,203 [INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-config.json from cache at C:\Users\wjdgone\.cache\torch\transformers\4be02c5697d91738003fb1685c9872f284166aa32e061576bbe6aaeb95649fcf.db13c9bc9c7bdd738ec89e069621d88e05dc670366092d809a9cbcac6798e24e
+2023-05-30 09:49:52,204 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50257
+}
+
+2023-05-30 09:49:52,524 [INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-pytorch_model.bin from cache at C:\Users\wjdgone\.cache\torch\transformers\4295d67f022061768f4adc386234dbdb781c814c39662dd1662221c309962c55.778cf36f5c4e5d94c8cd9cefcf2a580c8643570eb327f0d4a1f007fab2acbdf1
+2023-05-30 09:49:55,213 [INFO] Weights of GPT2LMHeadModel not initialized from pretrained model: ['lm_head.weight']
+2023-05-30 09:50:04,260 [INFO] check
+2023-05-30 10:12:31,232 [INFO] loading configuration file ./results/exp_00\config.json
+2023-05-30 10:12:31,233 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50264
+}
+
+2023-05-30 10:12:31,235 [INFO] loading weights file ./results/exp_00\pytorch_model.bin
+2023-05-30 10:12:39,305 [INFO] check
+2023-05-30 10:24:28,140 [INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-config.json from cache at C:\Users\wjdgone\.cache\torch\transformers\4be02c5697d91738003fb1685c9872f284166aa32e061576bbe6aaeb95649fcf.db13c9bc9c7bdd738ec89e069621d88e05dc670366092d809a9cbcac6798e24e
+2023-05-30 10:24:28,141 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50257
+}
+
+2023-05-30 10:24:28,461 [INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-pytorch_model.bin from cache at C:\Users\wjdgone\.cache\torch\transformers\4295d67f022061768f4adc386234dbdb781c814c39662dd1662221c309962c55.778cf36f5c4e5d94c8cd9cefcf2a580c8643570eb327f0d4a1f007fab2acbdf1
+2023-05-30 10:24:31,072 [INFO] Weights of GPT2LMHeadModel not initialized from pretrained model: ['lm_head.weight']
+2023-05-30 10:30:27,408 [INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-config.json from cache at C:\Users\wjdgone\.cache\torch\transformers\4be02c5697d91738003fb1685c9872f284166aa32e061576bbe6aaeb95649fcf.db13c9bc9c7bdd738ec89e069621d88e05dc670366092d809a9cbcac6798e24e
+2023-05-30 10:30:27,408 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50257
+}
+
+2023-05-30 10:30:27,718 [INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-pytorch_model.bin from cache at C:\Users\wjdgone\.cache\torch\transformers\4295d67f022061768f4adc386234dbdb781c814c39662dd1662221c309962c55.778cf36f5c4e5d94c8cd9cefcf2a580c8643570eb327f0d4a1f007fab2acbdf1
+2023-05-30 10:30:30,192 [INFO] Weights of GPT2LMHeadModel not initialized from pretrained model: ['lm_head.weight']
+2023-05-30 10:31:03,696 [INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-config.json from cache at C:\Users\wjdgone\.cache\torch\transformers\4be02c5697d91738003fb1685c9872f284166aa32e061576bbe6aaeb95649fcf.db13c9bc9c7bdd738ec89e069621d88e05dc670366092d809a9cbcac6798e24e
+2023-05-30 10:31:03,697 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50257
+}
+
+2023-05-30 10:31:04,024 [INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-pytorch_model.bin from cache at C:\Users\wjdgone\.cache\torch\transformers\4295d67f022061768f4adc386234dbdb781c814c39662dd1662221c309962c55.778cf36f5c4e5d94c8cd9cefcf2a580c8643570eb327f0d4a1f007fab2acbdf1
+2023-05-30 10:31:06,496 [INFO] Weights of GPT2LMHeadModel not initialized from pretrained model: ['lm_head.weight']
+2023-05-30 10:31:25,852 [INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-config.json from cache at C:\Users\wjdgone\.cache\torch\transformers\4be02c5697d91738003fb1685c9872f284166aa32e061576bbe6aaeb95649fcf.db13c9bc9c7bdd738ec89e069621d88e05dc670366092d809a9cbcac6798e24e
+2023-05-30 10:31:25,852 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50257
+}
+
+2023-05-30 10:31:26,168 [INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-pytorch_model.bin from cache at C:\Users\wjdgone\.cache\torch\transformers\4295d67f022061768f4adc386234dbdb781c814c39662dd1662221c309962c55.778cf36f5c4e5d94c8cd9cefcf2a580c8643570eb327f0d4a1f007fab2acbdf1
+2023-05-30 10:31:28,638 [INFO] Weights of GPT2LMHeadModel not initialized from pretrained model: ['lm_head.weight']
+2023-05-30 10:32:18,872 [INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-config.json from cache at C:\Users\wjdgone\.cache\torch\transformers\4be02c5697d91738003fb1685c9872f284166aa32e061576bbe6aaeb95649fcf.db13c9bc9c7bdd738ec89e069621d88e05dc670366092d809a9cbcac6798e24e
+2023-05-30 10:32:18,873 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50257
+}
+
+2023-05-30 10:32:19,204 [INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-pytorch_model.bin from cache at C:\Users\wjdgone\.cache\torch\transformers\4295d67f022061768f4adc386234dbdb781c814c39662dd1662221c309962c55.778cf36f5c4e5d94c8cd9cefcf2a580c8643570eb327f0d4a1f007fab2acbdf1
+2023-05-30 10:32:21,667 [INFO] Weights of GPT2LMHeadModel not initialized from pretrained model: ['lm_head.weight']
+2023-05-30 10:32:59,094 [INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-config.json from cache at C:\Users\wjdgone\.cache\torch\transformers\4be02c5697d91738003fb1685c9872f284166aa32e061576bbe6aaeb95649fcf.db13c9bc9c7bdd738ec89e069621d88e05dc670366092d809a9cbcac6798e24e
+2023-05-30 10:32:59,095 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50257
+}
+
+2023-05-30 10:32:59,412 [INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-pytorch_model.bin from cache at C:\Users\wjdgone\.cache\torch\transformers\4295d67f022061768f4adc386234dbdb781c814c39662dd1662221c309962c55.778cf36f5c4e5d94c8cd9cefcf2a580c8643570eb327f0d4a1f007fab2acbdf1
+2023-05-30 10:33:01,864 [INFO] Weights of GPT2LMHeadModel not initialized from pretrained model: ['lm_head.weight']
+2023-05-30 10:33:39,853 [INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-config.json from cache at C:\Users\wjdgone\.cache\torch\transformers\4be02c5697d91738003fb1685c9872f284166aa32e061576bbe6aaeb95649fcf.db13c9bc9c7bdd738ec89e069621d88e05dc670366092d809a9cbcac6798e24e
+2023-05-30 10:33:39,854 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50257
+}
+
+2023-05-30 10:33:40,172 [INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-pytorch_model.bin from cache at C:\Users\wjdgone\.cache\torch\transformers\4295d67f022061768f4adc386234dbdb781c814c39662dd1662221c309962c55.778cf36f5c4e5d94c8cd9cefcf2a580c8643570eb327f0d4a1f007fab2acbdf1
+2023-05-30 10:33:42,656 [INFO] Weights of GPT2LMHeadModel not initialized from pretrained model: ['lm_head.weight']
+2023-05-30 10:40:13,855 [INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-config.json from cache at C:\Users\wjdgone\.cache\torch\transformers\4be02c5697d91738003fb1685c9872f284166aa32e061576bbe6aaeb95649fcf.db13c9bc9c7bdd738ec89e069621d88e05dc670366092d809a9cbcac6798e24e
+2023-05-30 10:40:13,856 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50257
+}
+
+2023-05-30 10:40:14,179 [INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-pytorch_model.bin from cache at C:\Users\wjdgone\.cache\torch\transformers\4295d67f022061768f4adc386234dbdb781c814c39662dd1662221c309962c55.778cf36f5c4e5d94c8cd9cefcf2a580c8643570eb327f0d4a1f007fab2acbdf1
+2023-05-30 10:40:16,532 [INFO] Weights of GPT2LMHeadModel not initialized from pretrained model: ['lm_head.weight']
+2023-05-30 10:40:40,804 [INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-config.json from cache at C:\Users\wjdgone\.cache\torch\transformers\4be02c5697d91738003fb1685c9872f284166aa32e061576bbe6aaeb95649fcf.db13c9bc9c7bdd738ec89e069621d88e05dc670366092d809a9cbcac6798e24e
+2023-05-30 10:40:40,805 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50257
+}
+
+2023-05-30 10:40:41,153 [INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-pytorch_model.bin from cache at C:\Users\wjdgone\.cache\torch\transformers\4295d67f022061768f4adc386234dbdb781c814c39662dd1662221c309962c55.778cf36f5c4e5d94c8cd9cefcf2a580c8643570eb327f0d4a1f007fab2acbdf1
+2023-05-30 10:40:43,587 [INFO] Weights of GPT2LMHeadModel not initialized from pretrained model: ['lm_head.weight']
+2023-05-30 10:40:56,997 [INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-config.json from cache at C:\Users\wjdgone\.cache\torch\transformers\4be02c5697d91738003fb1685c9872f284166aa32e061576bbe6aaeb95649fcf.db13c9bc9c7bdd738ec89e069621d88e05dc670366092d809a9cbcac6798e24e
+2023-05-30 10:40:56,998 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50257
+}
+
+2023-05-30 10:40:57,325 [INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-pytorch_model.bin from cache at C:\Users\wjdgone\.cache\torch\transformers\4295d67f022061768f4adc386234dbdb781c814c39662dd1662221c309962c55.778cf36f5c4e5d94c8cd9cefcf2a580c8643570eb327f0d4a1f007fab2acbdf1
+2023-05-30 10:40:59,595 [INFO] Weights of GPT2LMHeadModel not initialized from pretrained model: ['lm_head.weight']
+2023-05-30 10:58:25,227 [INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-config.json from cache at C:\Users\wjdgone\.cache\torch\transformers\4be02c5697d91738003fb1685c9872f284166aa32e061576bbe6aaeb95649fcf.db13c9bc9c7bdd738ec89e069621d88e05dc670366092d809a9cbcac6798e24e
+2023-05-30 10:58:25,228 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50257
+}
+
+2023-05-30 10:58:25,547 [INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-pytorch_model.bin from cache at C:\Users\wjdgone\.cache\torch\transformers\4295d67f022061768f4adc386234dbdb781c814c39662dd1662221c309962c55.778cf36f5c4e5d94c8cd9cefcf2a580c8643570eb327f0d4a1f007fab2acbdf1
+2023-05-30 10:58:27,989 [INFO] Weights of GPT2LMHeadModel not initialized from pretrained model: ['lm_head.weight']
+2023-05-30 10:58:39,714 [INFO] loading configuration file ./results/exp_00\config.json
+2023-05-30 10:58:39,714 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50264
+}
+
+2023-05-30 10:58:39,715 [INFO] loading weights file ./results/exp_00\pytorch_model.bin
+2023-05-30 11:00:31,974 [INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-config.json from cache at C:\Users\wjdgone\.cache\torch\transformers\4be02c5697d91738003fb1685c9872f284166aa32e061576bbe6aaeb95649fcf.db13c9bc9c7bdd738ec89e069621d88e05dc670366092d809a9cbcac6798e24e
+2023-05-30 11:00:31,975 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50257
+}
+
+2023-05-30 11:00:32,292 [INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-pytorch_model.bin from cache at C:\Users\wjdgone\.cache\torch\transformers\4295d67f022061768f4adc386234dbdb781c814c39662dd1662221c309962c55.778cf36f5c4e5d94c8cd9cefcf2a580c8643570eb327f0d4a1f007fab2acbdf1
+2023-05-30 11:00:34,845 [INFO] Weights of GPT2LMHeadModel not initialized from pretrained model: ['lm_head.weight']
+2023-06-04 12:11:50,609 [INFO] loading configuration file ./results/exp_00\config.json
+2023-06-04 12:11:50,612 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50264
+}
+
+2023-06-04 12:11:50,612 [INFO] loading weights file ./results/exp_00\pytorch_model.bin
+2023-06-04 12:12:23,408 [INFO] loading configuration file ./results/exp_00\config.json
+2023-06-04 12:12:23,408 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50264
+}
+
+2023-06-04 12:12:23,411 [INFO] loading weights file ./results/exp_00\pytorch_model.bin
+2023-06-04 13:03:28,772 [INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-config.json from cache at C:\Users\wjdgone\.cache\torch\transformers\4be02c5697d91738003fb1685c9872f284166aa32e061576bbe6aaeb95649fcf.db13c9bc9c7bdd738ec89e069621d88e05dc670366092d809a9cbcac6798e24e
+2023-06-04 13:03:28,772 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50257
+}
+
+2023-06-04 13:03:29,120 [INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-pytorch_model.bin from cache at C:\Users\wjdgone\.cache\torch\transformers\4295d67f022061768f4adc386234dbdb781c814c39662dd1662221c309962c55.778cf36f5c4e5d94c8cd9cefcf2a580c8643570eb327f0d4a1f007fab2acbdf1
+2023-06-04 13:03:31,742 [INFO] Weights of GPT2LMHeadModel not initialized from pretrained model: ['lm_head.weight']
+2023-06-05 07:51:31,012 [INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-config.json from cache at C:\Users\wjdgone\.cache\torch\transformers\4be02c5697d91738003fb1685c9872f284166aa32e061576bbe6aaeb95649fcf.db13c9bc9c7bdd738ec89e069621d88e05dc670366092d809a9cbcac6798e24e
+2023-06-05 07:51:31,014 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50257
+}
+
+2023-06-05 07:51:31,338 [INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-pytorch_model.bin from cache at C:\Users\wjdgone\.cache\torch\transformers\4295d67f022061768f4adc386234dbdb781c814c39662dd1662221c309962c55.778cf36f5c4e5d94c8cd9cefcf2a580c8643570eb327f0d4a1f007fab2acbdf1
+2023-06-05 07:51:34,880 [INFO] Weights of GPT2LMHeadModel not initialized from pretrained model: ['lm_head.weight']
+2023-06-05 07:51:44,081 [INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-config.json from cache at C:\Users\wjdgone\.cache\torch\transformers\4be02c5697d91738003fb1685c9872f284166aa32e061576bbe6aaeb95649fcf.db13c9bc9c7bdd738ec89e069621d88e05dc670366092d809a9cbcac6798e24e
+2023-06-05 07:51:44,085 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50257
+}
+
+2023-06-05 07:51:44,408 [INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-pytorch_model.bin from cache at C:\Users\wjdgone\.cache\torch\transformers\4295d67f022061768f4adc386234dbdb781c814c39662dd1662221c309962c55.778cf36f5c4e5d94c8cd9cefcf2a580c8643570eb327f0d4a1f007fab2acbdf1
+2023-06-05 07:51:48,083 [INFO] Weights of GPT2LMHeadModel not initialized from pretrained model: ['lm_head.weight']
+2023-06-05 08:00:34,469 [INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-config.json from cache at C:\Users\wjdgone\.cache\torch\transformers\4be02c5697d91738003fb1685c9872f284166aa32e061576bbe6aaeb95649fcf.db13c9bc9c7bdd738ec89e069621d88e05dc670366092d809a9cbcac6798e24e
+2023-06-05 08:00:34,469 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50257
+}
+
+2023-06-05 08:00:34,806 [INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-pytorch_model.bin from cache at C:\Users\wjdgone\.cache\torch\transformers\4295d67f022061768f4adc386234dbdb781c814c39662dd1662221c309962c55.778cf36f5c4e5d94c8cd9cefcf2a580c8643570eb327f0d4a1f007fab2acbdf1
+2023-06-05 08:00:37,360 [INFO] Weights of GPT2LMHeadModel not initialized from pretrained model: ['lm_head.weight']
+2023-06-05 08:41:25,360 [INFO] loading configuration file ./results/exp_05\config.json
+2023-06-05 08:41:25,360 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50260
+}
+
+2023-06-05 08:41:25,362 [INFO] loading weights file ./results/exp_05\pytorch_model.bin
+2023-06-07 10:57:31,843 [INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-config.json from cache at C:\Users\wjdgone\.cache\torch\transformers\4be02c5697d91738003fb1685c9872f284166aa32e061576bbe6aaeb95649fcf.db13c9bc9c7bdd738ec89e069621d88e05dc670366092d809a9cbcac6798e24e
+2023-06-07 10:57:31,844 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50257
+}
+
+2023-06-07 10:57:32,166 [INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-pytorch_model.bin from cache at C:\Users\wjdgone\.cache\torch\transformers\4295d67f022061768f4adc386234dbdb781c814c39662dd1662221c309962c55.778cf36f5c4e5d94c8cd9cefcf2a580c8643570eb327f0d4a1f007fab2acbdf1
+2023-06-07 10:57:34,716 [INFO] Weights of GPT2LMHeadModel not initialized from pretrained model: ['lm_head.weight']
+2023-06-09 21:45:17,650 [INFO] loading configuration file ./results/exp_06\config.json
+2023-06-09 21:45:17,651 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50260
+}
+
+2023-06-09 21:45:17,653 [INFO] loading weights file ./results/exp_06\pytorch_model.bin
+2023-06-09 21:45:38,042 [INFO] loading configuration file ./results/exp_06\config.json
+2023-06-09 21:45:38,043 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50260
+}
+
+2023-06-09 21:45:38,044 [INFO] loading weights file ./results/exp_06\pytorch_model.bin
+2023-06-09 21:45:55,578 [INFO] loading configuration file ./results/exp_06\config.json
+2023-06-09 21:45:55,579 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50260
+}
+
+2023-06-09 21:45:55,580 [INFO] loading weights file ./results/exp_06\pytorch_model.bin
+2023-06-09 21:47:17,392 [INFO] loading configuration file ./results/exp_06\config.json
+2023-06-09 21:47:17,392 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50260
+}
+
+2023-06-09 21:47:17,394 [INFO] loading weights file ./results/exp_06\pytorch_model.bin
+2023-06-09 21:47:22,148 [INFO] starting batch
+2023-06-09 21:47:22,149 [INFO] in eval loop
+2023-06-09 21:48:47,873 [INFO] starting batch
+2023-06-09 21:48:47,978 [INFO] starting batch
+2023-06-09 21:48:48,442 [INFO] starting batch
+2023-06-09 21:48:48,549 [INFO] starting batch
+2023-06-09 21:48:48,801 [INFO] starting batch
+2023-06-09 21:48:49,256 [INFO] starting batch
+2023-06-09 21:48:49,371 [INFO] starting batch
+2023-06-09 21:48:49,622 [INFO] starting batch
+2023-06-09 21:48:50,069 [INFO] starting batch
+2023-06-09 21:48:50,194 [INFO] starting batch
+2023-06-09 21:48:50,448 [INFO] starting batch
+2023-06-09 21:48:50,897 [INFO] starting batch
+2023-06-09 21:48:51,015 [INFO] starting batch
+2023-06-09 21:48:51,270 [INFO] starting batch
+2023-06-09 21:48:51,723 [INFO] starting batch
+2023-06-09 21:48:51,844 [INFO] starting batch
+2023-06-09 21:48:52,097 [INFO] starting batch
+2023-06-09 21:48:52,552 [INFO] starting batch
+2023-06-09 21:48:52,670 [INFO] starting batch
+2023-06-09 21:48:52,919 [INFO] starting batch
+2023-06-09 21:48:53,369 [INFO] starting batch
+2023-06-09 21:48:53,491 [INFO] starting batch
+2023-06-09 21:48:53,745 [INFO] starting batch
+2023-06-09 21:48:54,195 [INFO] starting batch
+2023-06-09 21:48:54,312 [INFO] starting batch
+2023-06-09 21:48:54,566 [INFO] starting batch
+2023-06-09 21:48:55,020 [INFO] starting batch
+2023-06-09 21:48:55,135 [INFO] starting batch
+2023-06-09 21:48:55,388 [INFO] starting batch
+2023-06-09 21:48:55,833 [INFO] starting batch
+2023-06-09 21:48:55,956 [INFO] starting batch
+2023-06-09 21:48:56,202 [INFO] starting batch
+2023-06-09 21:48:56,643 [INFO] starting batch
+2023-06-09 21:48:56,754 [INFO] starting batch
+2023-06-09 21:48:57,000 [INFO] starting batch
+2023-06-09 21:48:57,442 [INFO] starting batch
+2023-06-09 21:48:57,552 [INFO] starting batch
+2023-06-09 21:48:57,797 [INFO] starting batch
+2023-06-09 21:48:58,227 [INFO] starting batch
+2023-06-09 21:48:58,348 [INFO] starting batch
+2023-06-09 21:48:58,592 [INFO] starting batch
+2023-06-09 21:48:59,040 [INFO] starting batch
+2023-06-09 21:48:59,166 [INFO] starting batch
+2023-06-09 21:48:59,417 [INFO] starting batch
+2023-06-09 21:48:59,866 [INFO] starting batch
+2023-06-09 21:48:59,980 [INFO] starting batch
+2023-06-09 21:49:00,226 [INFO] starting batch
+2023-06-09 21:49:00,680 [INFO] starting batch
+2023-06-09 21:49:00,798 [INFO] starting batch
+2023-06-09 21:49:01,044 [INFO] starting batch
+2023-06-09 21:49:01,468 [INFO] starting batch
+2023-06-09 21:49:01,594 [INFO] starting batch
+2023-06-09 21:49:01,835 [INFO] starting batch
+2023-06-09 21:49:02,265 [INFO] starting batch
+2023-06-09 21:49:02,382 [INFO] starting batch
+2023-06-09 21:49:02,624 [INFO] starting batch
+2023-06-09 21:49:03,063 [INFO] starting batch
+2023-06-09 21:49:03,173 [INFO] starting batch
+2023-06-09 21:49:03,414 [INFO] starting batch
+2023-06-09 21:49:03,845 [INFO] starting batch
+2023-06-09 21:49:03,959 [INFO] starting batch
+2023-06-09 21:49:04,205 [INFO] starting batch
+2023-06-09 21:49:04,637 [INFO] starting batch
+2023-06-09 21:49:04,749 [INFO] starting batch
+2023-06-09 21:49:04,996 [INFO] starting batch
+2023-06-09 21:49:05,437 [INFO] starting batch
+2023-06-09 21:49:05,554 [INFO] starting batch
+2023-06-09 21:49:05,800 [INFO] starting batch
+2023-06-09 21:49:06,238 [INFO] starting batch
+2023-06-09 21:49:06,351 [INFO] starting batch
+2023-06-09 21:49:06,598 [INFO] starting batch
+2023-06-09 21:49:07,037 [INFO] starting batch
+2023-06-09 21:49:07,151 [INFO] starting batch
+2023-06-09 21:49:07,396 [INFO] starting batch
+2023-06-09 21:49:07,835 [INFO] starting batch
+2023-06-09 21:49:07,957 [INFO] starting batch
+2023-06-09 21:49:11,061 [INFO] loading configuration file ./results/exp_06\config.json
+2023-06-09 21:49:11,061 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50260
+}
+
+2023-06-09 21:49:11,062 [INFO] loading weights file ./results/exp_06\pytorch_model.bin
+2023-06-10 00:03:17,345 [INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-config.json from cache at C:\Users\wjdgone\.cache\torch\transformers\4be02c5697d91738003fb1685c9872f284166aa32e061576bbe6aaeb95649fcf.db13c9bc9c7bdd738ec89e069621d88e05dc670366092d809a9cbcac6798e24e
+2023-06-10 00:03:17,346 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50257
+}
+
+2023-06-10 00:03:17,658 [INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-pytorch_model.bin from cache at C:\Users\wjdgone\.cache\torch\transformers\4295d67f022061768f4adc386234dbdb781c814c39662dd1662221c309962c55.778cf36f5c4e5d94c8cd9cefcf2a580c8643570eb327f0d4a1f007fab2acbdf1
+2023-06-10 00:03:20,300 [INFO] Weights of GPT2LMHeadModel not initialized from pretrained model: ['lm_head.weight']
+2023-06-10 00:56:51,378 [INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-config.json from cache at C:\Users\wjdgone\.cache\torch\transformers\4be02c5697d91738003fb1685c9872f284166aa32e061576bbe6aaeb95649fcf.db13c9bc9c7bdd738ec89e069621d88e05dc670366092d809a9cbcac6798e24e
+2023-06-10 00:56:51,378 [INFO] Model config GPT2Config {
+  "_num_labels": 2,
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "min_length": 0,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "no_repeat_ngram_size": 0,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50257
+}
+
+2023-06-10 00:56:51,704 [INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-pytorch_model.bin from cache at C:\Users\wjdgone\.cache\torch\transformers\4295d67f022061768f4adc386234dbdb781c814c39662dd1662221c309962c55.778cf36f5c4e5d94c8cd9cefcf2a580c8643570eb327f0d4a1f007fab2acbdf1
+2023-06-10 00:56:54,062 [INFO] Weights of GPT2LMHeadModel not initialized from pretrained model: ['lm_head.weight']
