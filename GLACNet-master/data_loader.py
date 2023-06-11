@@ -116,6 +116,9 @@ class VistDataset(data.Dataset):
 
     def GetLength(self):
         return len(self.ids)
+    
+    def GetRandomStory(self):
+        return self.vist.SampleStoryImages()
 
 
 def collate_fn(data):

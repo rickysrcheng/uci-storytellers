@@ -4,11 +4,62 @@ import numpy as np
 import torchvision.models as models
 from torch.autograd import Variable
 import torch.nn.functional as F
-import itertools
 import operator
-from multiprocessing.dummy import Pool as ThreadPool
-from multiprocessing import Pool
 from collections import Counter
+import transformers
+from transformers import BeitModel, CLIPVisionModel
+
+class EncoderClip(nn.Module):
+    def __init__(self, target_size):
+        super(EncoderClip, self).__init__()
+
+        # resnet = models.resnet152(weights=models.ResNet152_Weights.DEFAULT)
+        
+        # # selects all layers of resnet except the final FC layer
+        # modules = list(resnet.children())[:-1]
+        # self.resnet = nn.Sequential(*modules)
+        # for param in self.resnet.parameters():
+        #     param.requires_grad = False
+
+        # # essentially finetuning resnet based on this last FC layer
+        # self.linear = nn.Linear(resnet.fc.in_features, target_size)
+        # self.bn = nn.BatchNorm1d(target_size, momentum=0.01)
+        # self.init_weights()
+
+        #self.beit = BeitModel.from_pretrained("microsoft/beit-base-patch16-224-pt22k")
+        self.cnn = CLIPVisionModel.from_pretrained("openai/clip-vit-base-patch32")
+        for param in self.cnn.parameters():
+            param.requires_grad = False
+        
+
+        # essentially finetuning beit based on this last FC layer
+        # clip last hidden: 50 x 768
+        # beit last hidden: 197 x 768
+        self.linear = nn.Linear(50*768, target_size)
+        self.bn = nn.BatchNorm1d(target_size, momentum=0.01)
+        self.init_weights()
+
+
+    def get_params(self):
+        return list(self.linear.parameters()) + list(self.bn.parameters())
+
+    def init_weights(self):
+        self.linear.weight.data.normal_(0.0, 0.02)
+        self.linear.bias.data.fill_(0)
+
+    def forward(self, images):
+        # features = self.resnet(images)
+        # features = Variable(features.data)
+        # features = features.view(features.size(0), -1)
+        # features = self.linear(features)
+        # features = self.bn(features)
+
+        features = self.cnn(images)
+        features = features.last_hidden_state
+        features = self.linear(features.view(features.size(0), -1))
+        features = self.bn(features)
+        return features
+
 
 class EncoderCNN(nn.Module):
     def __init__(self, target_size):
@@ -38,19 +89,23 @@ class EncoderCNN(nn.Module):
         features = self.linear(features)
         features = self.bn(features)
         return features
-
+    
 
 class EncoderStory(nn.Module):
-    def __init__(self, img_feature_size, hidden_size, n_layers):
+    def __init__(self, img_feature_size, hidden_size, n_layers, clip=True):
         super(EncoderStory, self).__init__()
 
         self.hidden_size = hidden_size
         self.n_layers = n_layers
-        self.cnn = EncoderCNN(img_feature_size)
+        if clip:
+            self.cnn = EncoderClip(img_feature_size)
+        else:
+            self.cnn = EncoderCNN(img_feature_size)
         self.lstm = nn.LSTM(img_feature_size, hidden_size, n_layers, batch_first=True, bidirectional=True, dropout=0.5)
         self.linear = nn.Linear(hidden_size * 2 + img_feature_size, hidden_size * 2)
         self.dropout = nn.Dropout(p=0.5)
         self.bn = nn.BatchNorm1d(hidden_size * 2, momentum=0.01)
+
         self.init_weights()
 
     def get_params(self):
@@ -62,9 +117,13 @@ class EncoderStory(nn.Module):
 
     def forward(self, story_images):
         data_size = story_images.size()
+        #print("Data size", data_size)
         local_cnn = self.cnn(story_images.view(-1, data_size[2], data_size[3], data_size[4]))
+        #print("Local cnn", local_cnn.shape, data_size)
         global_rnn, (hn, cn) = self.lstm(local_cnn.view(data_size[0], data_size[1], -1))
+        #print("Global Rnn", global_rnn.shape)
         glocal = torch.cat((local_cnn.view(data_size[0], data_size[1], -1), global_rnn), 2)
+        #print("GLOCAL", glocal.shape)
         output = self.linear(glocal)
         output = self.dropout(output)
         output = self.bn(output.contiguous().view(-1, self.hidden_size * 2)).view(data_size[0], data_size[1], -1)
@@ -181,6 +240,7 @@ class DecoderRNN(nn.Module):
         function_list = [vocab('<end>'), vocab('.'), vocab('?'), vocab('!'), vocab('a'), vocab('an'), vocab('am'), vocab('is'), vocab('was'), vocab('are'), vocab('were'), vocab('do'), vocab('does'), vocab('did')]
 
         cumulated_word = []
+        print("Inference", features.shape)
         for feature in features:
 
             feature = feature.unsqueeze(0).unsqueeze(0)

@@ -1,4 +1,5 @@
 import json
+from random import sample
 
 class VIST:
     def __init__(self, sis_file = None):
@@ -23,4 +24,8 @@ class VIST:
 
         self.images = images
         self.stories = stories
+
+    def SampleStoryImages(self):
+        selected = sample(list(self.stories.keys()), 1)
+        return [seq["photo_flickr_id"] for seq in self.stories[selected[0]]]
 

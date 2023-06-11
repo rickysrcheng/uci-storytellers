@@ -165,7 +165,29 @@ def sort_images():
 def main():
     #filter_broken_images()
     #download_dataset()
-    sort_images()
+    #sort_images()
+    with open(f"./sis/filtered.val.story-in-sequence.json", 'r') as handle:
+        data = json.load(handle)
+    data['annotations'] = data['annotations'][:50]
+    print(data['annotations'])
+    image_file = {}
+    for image in data['images']:
+        url = 'url_o' if 'url_o' in image else 'url_m'
+        ii = image[url].split(".")
+        image_file[image['id']] = f"{image['id']}.{ii[-1]}"
+    id = {}
+    for annotation in data['annotations']:
+        # story_id = annotation['story_id']
+        # stories[story_id] = stories.get(story_id, []) + [annotation]
+        if annotation['photo_flickr_id'] in id:
+            id[annotation['photo_flickr_id']] += 1
+        else:
+            id[annotation['photo_flickr_id']] = 1
+        shutil.copy2(f"./img/val/{image_file[annotation['photo_flickr_id']]}", 
+                f"./chan-img/{image_file[annotation['photo_flickr_id']]}")
+    with open(f"./sis/chan.val.story-in-sequence.json", 'w') as handle:
+        json.dump(data, handle, ensure_ascii=False)
 
+    print(id)
 if __name__ == '__main__':
     main()

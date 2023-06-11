@@ -11,6 +11,7 @@ from model import EncoderStory, DecoderStory
 from torch.autograd import Variable
 from torchvision import transforms
 from PIL import Image
+import wandb
 
 def to_var(x):
     if torch.cuda.is_available():
@@ -21,6 +22,7 @@ def main(args):
     # Create model directory
     if not os.path.exists(args.model_path):
         os.makedirs(args.model_path)
+    wandb.login()
 
     # Image preprocessing
     train_transform = transforms.Compose([
@@ -44,19 +46,33 @@ def main(args):
     train_data_loader = get_loader(args.train_image_dir, args.train_sis_path, vocab, train_transform, args.batch_size, shuffle=True, num_workers=args.num_workers)
     val_data_loader = get_loader(args.val_image_dir, args.val_sis_path, vocab, val_transform, args.batch_size, shuffle=False, num_workers=args.num_workers)
 
-    encoder = EncoderStory(args.img_feature_size, args.hidden_size, args.num_layers)
+    encoder = EncoderStory(args.img_feature_size, args.hidden_size, args.num_layers, clip=False)
     decoder = DecoderStory(args.embed_size, args.hidden_size, vocab)
 
+    model_name = '/glac'
+    run = wandb.init(
+        # Set the project where this run will be logged
+        project="storytellers",
+        # Track hyperparameters and run metadata
+        config={
+            "model":model_name,
+            "epochs": args.num_epochs,
+    })
+    model_name = ""
     pretrained_epoch = 0
     if args.pretrained_epoch > 0:
         pretrained_epoch = args.pretrained_epoch
-        encoder.load_state_dict(torch.load('./models/encoder-' + str(pretrained_epoch) + '.pkl'))
-        decoder.load_state_dict(torch.load('./models/decoder-' + str(pretrained_epoch) + '.pkl'))
+        encoder.load_state_dict(torch.load('./models' + model_name + '/encoder-' + str(pretrained_epoch) + '.pkl'))
+        decoder.load_state_dict(torch.load('./models' + model_name + '/decoder-' + str(pretrained_epoch) + '.pkl'))
 
+
+    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+    device2 = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
     if torch.cuda.is_available():
-        encoder.cuda()
-        decoder.cuda()
         print("Cuda is enabled...")
+    
+    encoder.to(device)
+    decoder.to(device)
 
     criterion = nn.CrossEntropyLoss()
     params = decoder.get_params() + encoder.get_params()
@@ -67,7 +83,7 @@ def main(args):
 
     min_avg_loss = float("inf")
     overfit_warn = 0
-
+    print("Begin training")
     for epoch in range(args.num_epochs):
 
         if epoch < pretrained_epoch:
@@ -80,13 +96,13 @@ def main(args):
             decoder.zero_grad()
             encoder.zero_grad()
             loss = 0
-            images = to_var(torch.stack(image_stories))
+            images = torch.stack(image_stories).to(device)
 
             features, _ = encoder(images)
 
             for si, data in enumerate(zip(features, targets_set, lengths_set)):
-                feature = data[0]
-                captions = to_var(data[1])
+                feature = data[0].to(device)
+                captions = data[1].to(device)
                 lengths = data[2]
 
                 outputs = decoder(feature, captions, lengths)
@@ -107,7 +123,7 @@ def main(args):
             
         avg_loss /= (args.batch_size * total_train_step * 5)
         print('Epoch [%d/%d], Average Train Loss: %.4f, Average Train Perplexity: %5.4f' %(epoch + 1, args.num_epochs, avg_loss, np.exp(avg_loss)))
-
+        wandb.log({"train_loss": avg_loss, "train_perplexity": np.exp(avg_loss)})
         # Save the models
         torch.save(decoder.state_dict(), os.path.join(args.model_path, 'decoder-%d.pkl' %(epoch+1)))
         torch.save(encoder.state_dict(), os.path.join(args.model_path, 'encoder-%d.pkl' %(epoch+1)))
@@ -118,13 +134,13 @@ def main(args):
         avg_loss = 0.0
         for bi, (image_stories, targets_set, lengths_set, photo_sequence_set, album_ids_set) in enumerate(val_data_loader):
             loss = 0
-            images = to_var(torch.stack(image_stories))
+            images = torch.stack(image_stories).to(device)
 
             features, _ = encoder(images)
 
             for si, data in enumerate(zip(features, targets_set, lengths_set)):
                 feature = data[0]
-                captions = to_var(data[1])
+                captions = data[1].to(device)
                 lengths = data[2]
 
                 outputs = decoder(feature, captions, lengths)
@@ -134,7 +150,7 @@ def main(args):
 
             avg_loss += loss.item()
             loss /= (args.batch_size * 5)
-
+            
             # Print log info
             if bi % args.log_step == 0:
                 print('Epoch [%d/%d], Val Step [%d/%d], Loss: %.4f, Perplexity: %5.4f'
@@ -143,7 +159,7 @@ def main(args):
 
         avg_loss /= (args.batch_size * total_val_step * 5)
         print('Epoch [%d/%d], Average Val Loss: %.4f, Average Val Perplexity: %5.4f' %(epoch + 1, args.num_epochs, avg_loss, np.exp(avg_loss)))
-
+        wandb.log({"val_loss": avg_loss, "val_perplexity": np.exp(avg_loss)})
         #Termination Condition
         overfit_warn = overfit_warn + 1 if (min_avg_loss < avg_loss) else 0
         min_avg_loss = min(min_avg_loss, avg_loss)
